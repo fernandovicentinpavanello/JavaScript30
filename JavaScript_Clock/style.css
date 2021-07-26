@@ -1,47 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
   background-size: cover;
-  font-family: 'helvetica neue';
-  text-align: center;
-  font-size: 10px;
 }
 
 body {
-  margin: 0;
-  font-size: 2rem;
   display: flex;
-  flex: 1;
   min-height: 100vh;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #282a36;
+  margin-bottom: 20px;
 }
 
 .clock {
-  width: 30rem;
-  height: 30rem;
-  border: 20px solid white;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #fff;
   border-radius: 50%;
-  margin: 50px auto;
-  position: relative;
-  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
     inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.clock-face {
-  position: relative;
+.lines {
   width: 100%;
   height: 100%;
-  transform: translateY(-3px); /* account for the height of the clock hands */
+  padding-left: 50%;
+  padding-top: 50%;
+  margin-top: -3px;
+}
+
+.line {
+  width: 145px;
+  height: 5px;
+  position: absolute;
+  transform-origin: left;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.line .point {
+  width: 15px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+  padding-left: 50%;
+  padding-top: 50%;
+  margin-top: -100%;
 }
 
 .hand {
-  width: 50%;
-  height: 8px;
-  background: black;
+  transform-origin: left;
+  transform: rotate(0deg);
+  border-radius: 50%;
   position: absolute;
-  top: 50%;
-  transform-origin: 100%;
-  transform: rotate(90deg);
-  transition: all 0.05s;
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.second-hand {
+  width: 105px;
+  height: 3px;
+  background-color: #7f28ae;
+}
+
+.min-hand {
+  width: 120px;
+  height: 7px;
+  background-color: #111;
+}
+
+.hour-hand {
+  width: 80px;
+  height: 10px;
+  background-color: #111;
+}
+
+.centerPoint {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+.digital {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 13px;
 }
