@@ -7,6 +7,10 @@ const dogs = [
     name: 'Fred',
     age: 8,
   },
+  {
+    name: 'Eire',
+    age: 2,
+  },
 ];
 
 document.getElementById('content').style.backgroundColor = '#282a34';
