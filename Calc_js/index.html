@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link
-			rel="shortcut icon"
-			href="../assets/images/favicon.ico"
-			type="image/x-icon"
-		/>
-		<title>Document</title>
-	</head>
-	<body>
-		<main class="container">
-			<input type="text" id="useInput" placeholder="0" disabled />
-			<input type="text" id="compOut" placeholder="0" disabled />
-			<table>
-				<tr>
-					<td onClick="calcad('(')">(</td>
-					<td onClick="calcad(')')">)</td>
-					<td onClick="removech()">&lt;-</td>
-					<td onClick="calcad('+')" class="vari">+</td>
-				</tr>
-				<tr>
-					<td onClick="calcad('7')">7</td>
-					<td onClick="calcad('8')">8</td>
-					<td onClick="calcad('9')">9</td>
-					<td onClick="calcad('-')" class="vari">-</td>
-				</tr>
-				<tr>
-					<td onClick="calcad('4')">4</td>
-					<td onClick="calcad('5')">5</td>
-					<td onClick="calcad('6')">6</td>
-					<td onClick="calcad('*')" class="vari">*</td>
-				</tr>
-				<tr>
-					<td onClick="calcad('3')">3</td>
-					<td onClick="calcad('2')">2</td>
-					<td onClick="calcad('1')">1</td>
-					<td onClick="calcad('/')" class="vari">/</td>
-				</tr>
-				<tr>
-					<td onClick="reset()"><b>C</b></td>
-					<td onClick="calcad('0')">0</td>
-					<td onClick="calcad('.')">.</td>
-					<td class="equalBtn" onclick="execm()">=</td>
-				</tr>
-			</table>
-		</main>
-	</body>
-	<script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <input type="text" id="useInput" placeholder="0" disabled />
+      <input type="text" id="compOut" placeholder="0" disabled />
+      <table>
+        <tr>
+          <td onClick="calcad('(')">(</td>
+          <td onClick="calcad(')')">)</td>
+          <td onClick="removech()">&lt;-</td>
+          <td onClick="calcad('+')" class="vari">+</td>
+        </tr>
+        <tr>
+          <td onClick="calcad('7')">7</td>
+          <td onClick="calcad('8')">8</td>
+          <td onClick="calcad('9')">9</td>
+          <td onClick="calcad('-')" class="vari">-</td>
+        </tr>
+        <tr>
+          <td onClick="calcad('4')">4</td>
+          <td onClick="calcad('5')">5</td>
+          <td onClick="calcad('6')">6</td>
+          <td onClick="calcad('*')" class="vari">*</td>
+        </tr>
+        <tr>
+          <td onClick="calcad('3')">3</td>
+          <td onClick="calcad('2')">2</td>
+          <td onClick="calcad('1')">1</td>
+          <td onClick="calcad('/')" class="vari">/</td>
+        </tr>
+        <tr>
+          <td onClick="reset()"><b>C</b></td>
+          <td onClick="calcad('0')">0</td>
+          <td onClick="calcad('.')">.</td>
+          <td class="equalBtn" onclick="execm()">=</td>
+        </tr>
+      </table>
+    </main>
+  </body>
+  <script src="script.js"></script>
 </html>
