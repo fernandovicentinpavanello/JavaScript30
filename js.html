@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Processos com JavaScript</title>
+</head>
+
+<body>
+    <!-- Desenvolvendo um script em JS, para fazer um laço de repetição   -->
+    <h3>Criando um laço de repetição com FOR</h3>
+
+
+    <p id="retorno"></p>
+
+    <script>
+        // Criando um avariável do tipo constante com um laço de repetição
+        const nomes = ['Bruna', 'João', 'Maria', 'José', 'Pedro', 'Paulo', 'Ana', 'Carla', 'Júlia', 'Márcia'];
+
+        // Declarando uma variável de retorno
+        let texto = "";
+
+        // Criando um laço de repetição
+        for (let contador = 0; contador < nomes.length; contador++) {
+            // Adicionando o nome na variável de retorno
+            texto += nomes[contador] + "<br>";
+        }
+
+        document.getElementById('retorno').innerHTML = texto;
+
+
+    </script>
+</body>
+
+</html>
