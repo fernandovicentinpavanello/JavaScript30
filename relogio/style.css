@@ -1,0 +1,11 @@
+body {
+    background: #0E0F10;
+    color: #E8E6E3;
+    margin: auto;
+}
+
+h1 {
+    font-size: 16rem;
+    justify-content: center;
+    align-items: center;
+}
